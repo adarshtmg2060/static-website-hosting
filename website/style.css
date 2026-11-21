@@ -1,0 +1,78 @@
+:root {
+  --bg: #fdf6e3;
+  --ink: #1f2a44;
+  --accent: #2a9d8f;
+  --muted: #5c667d;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.25rem;
+  gap: 1rem;
+}
+
+.greeting {
+  font-size: 1.25rem;
+  color: var(--muted);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 9vw, 5.5rem);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.name {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.tagline {
+  max-width: 32ch;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  font: inherit;
+  font-size: 1rem;
+  color: #fff;
+  background: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+button:hover { background: var(--accent); border-color: var(--accent); }
+button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+.reply {
+  min-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}

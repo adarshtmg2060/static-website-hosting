@@ -1,1 +1,1 @@
-this is statis website hosting process
+ssh -i static-website.pem ubuntu@16.171.162.142 connected to linux server ip
